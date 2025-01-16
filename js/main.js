@@ -20,6 +20,12 @@
     doc.setAttribute('data-useragent', navigator.userAgent);
 
 
+
+
+
+
+
+
    /* Preloader
     * -------------------------------------------------- */
     var clPreloader = function() {
@@ -170,7 +176,7 @@
                         var $this = $(this);
 
                         $({ Counter: 0 }).animate({ Counter: $this.text() }, {
-                            duration: 4000,
+                            duration: 2000,
                             easing: 'swing',
                             step: function (curValue) {
                                 $this.text(Math.ceil(curValue));
@@ -323,6 +329,7 @@
 
     };
 
+    
 
    /* Contact Form
     * ------------------------------------------------------ */

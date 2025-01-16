@@ -61,7 +61,19 @@
  * ------------------------------------------------------------------- */
 html {
     font-size: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
 
 
 @media only screen and (max-width: 400px) {
@@ -104,7 +116,11 @@ a:hover, a:active {
     outline: 0;
 }
 
-
+.bold {
+    font-size: 17px;
+    font-weight: bold;
+    color: #f3f3f3;
+}
 
 /* ===================================================================
  * # typography & general theme styles
@@ -2354,6 +2370,11 @@ html.no-csstransitions .home-content__main {
     position: relative;
 }
 
+.s-about .p {
+    font-weight: 600;
+    color: #d0d0d0;
+}
+
 .s-about--gehenna{
     padding-top: 16.2rem;
     padding-bottom: 9rem;
@@ -2448,6 +2469,16 @@ html.no-csstransitions .home-content__main {
     width: 2px;
     height: 10.2rem;
     background-color: #FFFFFF;
+    position: absolute;
+    right: 7.2rem;
+    top: 0;
+}
+
+.about__line2 {
+    display: block;
+    width: 2px;
+    height: 10.2rem;
+    background-color: #077e75;
     position: absolute;
     right: 7.2rem;
     top: 0;
@@ -3152,6 +3183,7 @@ html.no-csstransitions .home-content__main {
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
+    background-size: cover;
 }
 
 .s-contact .overlay {
@@ -3301,6 +3333,18 @@ html.no-csstransitions .home-content__main {
 
 .contact-primary {
     width: 65%;
+}
+
+.contact-primary .text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #c8c8c8;
+}
+
+.contact-primary .textnote {
+    font-size: 6px;
+    font-weight: 550;
+    color: #c8c8c8;
 }
 
 .contact-primary #contactForm {
